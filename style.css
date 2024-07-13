@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+  gap: 1vh;
+}
+
+#disp {
+  background: #acbcff;
+  width: 75vh;
+  padding: 1vh;
+  border: none;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  padding: 1vh;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.weather-img {
+  height: 60%;
+  width: 100%;
+}
+
+.temp-data {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh;
+  position: absolute;
+  font-size: 30px;
+  gap: 1vh;
+}
+
+.extras-data {
+  font-size: 17px;
+  text-align: center;
+  text-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15vh;
+  margin-top: 10vh;
+}
+
+.container {
+  padding: 1vh;
+  background: #aee2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 50vh;
+  height: 75vh;
+}
+
+.scale-in-center {
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
